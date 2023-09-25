@@ -13,14 +13,24 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
-  <style>
-    body {background-color:white}
-    h1   { font-family:courier}
-    h4  { font-family:courier}
-    h1   {color: rgb(244, 151, 10);}
-    h4   {color: rgb(244, 151, 10);}
-    p    {color: rgb(28, 26, 26)}
-    </style>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="cities.html">A Few Cities</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="advanced.html">Advanced</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <b><h1>Visit cities with Sagar Amundla</h1></b>
   <div class="container">
@@ -62,6 +72,152 @@
 
   <p>When web browser is resizing to small , row with city names starts to wrap or break onto the next line. Because the CSS classes col-md are used for medium-sized screens and larger & the col-sm-2 classes are meant to be effective on small screens and larger. This is because of responsive web design. </p>
 
+  <div class="container">
+    <h1 class = "display-6">City Images</h1>
+    <img src="delhi.jpg" class = "img-fluid" alt="delhi city" width="300" height="500">
+    <img src="agra.jpg" class="img-fluid" alt="agra city" width="300" height="500">
+    <img src = "lucknow.jpg" class="img-fluid" alt="lucknow city" width="300" height="500">
+  </div>
+  <div class="container">
+    <h1 class = "display-6">City Images as Thumbnails</h1>
+    <img src="delhi.jpg" class="img-thumbnail" alt="delhi city" width="300" height="500">
+    <img src="agra.jpg" class="img-thumbnail" alt="agra city" width="300" height="500">
+    <img src="lucknow.jpg" class="img-thumbnail" alt="lucknow city" width="300" height="500">
+  </div>
+  <br>
+  <hr>
+  
+  <table class="table caption-top table-bordered border-primary table-striped-columns table-hover table-sm ">
+    <caption>rivers and trees in those cities</caption>
+    <thead class="table-light">
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Letter</th>
+        <th scope="col">City</th>
+        <th scope="col">River</th>
+        <th scope="col">Tree</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-primary">
+        <th scope="row">1</th>
+        <td>A</td>
+        <td>Ahemedhabad</td>
+        <td>Ahemedhabad river</td>
+        <td>sagar fruit</td>
+      </tr>
+      <tr class="table-primary">
+        <th scope="row">2</th>
+        <td>M</td>
+        <td>Mumbsi</td>
+        <td>pani puri river</td>
+        <td>Mango</td>
+      </tr>
+      <tr class="table-warning">
+        <th scope="row">3</th>
+        <td>U</td>
+        <td>Udaypur</td>
+        <td>udaya river</td>
+        <td>udhyaya</td>
+      </tr>
+      <tr class="table-warning">
+        <th scope="row">4</th>
+        <td>N</td>
+        <td>Nanded</td>
+        <td>Nand river</td>
+        <td>pine apple</td>
+      </tr>
+      <tr class="table-success">
+        <th scope="row">5</th>
+        <td>D</td>
+        <td>Delhi</td>
+        <td>Delhi river</td>
+        <td>Papaya</td>
+      </tr>
+      <tr class="table-success">
+          <th scope="row">6</th>
+          <td>L</td>
+          <td>Lucknow</td>
+          <td>KL river</td>
+          <td>Banana</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <h4 class="display-4">Button Groups</h4>
+  <div class="btn-toolbar" role="toolbar" aria-label="toolbar with button groups">
+    <div class="btn-group me-4" role="group" aria-label="first group">
+      <button type="button" class="btn btn-success">A</button>
+
+      <button type="button" class="btn btn-success">d</button>
+
+      <button type="button" class="btn btn-success">L</button>
+    </div>
+    <div class="btn-group me-4" role="group" aria-label="second group">
+      <button type="button" class="btn btn-warning">m</button>
+      <button type="button" class="btn btn-warning">u</button>
+      
+    </div>
+    <div class="btn-group" role="group" aria-label="third group">
+      <button type="button" class="btn btn-danger">n</button>
+
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      html pages
+    </button>
+    <div class="dropdown-menu">
+      <ul>
+        <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+        <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+      </ul>
+    </div>
+  
+  </div>
+  <br><hr>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputCity1" class="form-label">City</label>
+      <input type="text" class="form-control" id="exampleInputCity1" placeholder="Enter your city">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="delhi.jpg" class="img-fluid" alt="delhi">
+      <div class="card-body"><h2>delhi</h2>
+      <p class="card-text">Delhi,[a] officially the National Capital Territory (NCT) of Delhi, is a city and a union territory of India containing New Delhi, the capital of India. Straddling the Yamuna river, primarily its western or right bank, Delhi shares borders with the state of Uttar Pradesh in the east and with the state of Haryana in the remaining directions. The NCT covers an area of 1,484 square kilometres (573 sq mi).[5] According to the 2011 census, Delhi's city proper population was over 11 million,[6][15] while the NCT's population was about 16.8 million.[7] Delhi's urban agglomeration, which includes the satellite cities Ghaziabad, Faridabad, Gurgaon and Noida in an area known as the National Capital Region (NCR), has an estimated population of over 28 million, making it the largest metropolitan area in India and the second-largest in the world (after Tokyo).[8]    </p>
+    <a href="https://en.wikipedia.org/wiki/delhi" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="agra.jpg" class="img-fluid" alt="agra">
+      <div class="card-body"><h2>agra</h2>
+      <p class="card-text">Agra (/ˈɑːɡrə/, Hindustani: [ˈaːgraː] ⓘ) is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh, about 230 kilometres (140 mi) south-east of the national capital Delhi and 330 km west of the state capital Lucknow. With a population of roughly 1.6 million, Agra is the fourth-most populous city in Uttar Pradesh and twenty-third most populous city in India.[11]    </p>
+    <a href="https://en.wikipedia.org/wiki/agra" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="lucknow.jpg" class="img-fluid" alt="lucknow">
+      <div class="card-body"><h2>lucknow</h2>
+      <p class="card-text">Lucknow (/ˈlʌknaʊ/, Hindustani: [ˈləkʰnəuː] ⓘ Lakhnaū) is the capital and the largest city of the Indian state of Uttar Pradesh and it is also the second largest urban agglomeration in Uttar Pradesh.[8][9] Lucknow is the administrative headquarters of the eponymous district and division. Having a population of 2.8 million as per 2011 census, it is the eleventh most populous city and the twelfth-most populous urban agglomeration of India. Lucknow has always been a multicultural city that flourished as a North Indian cultural and artistic hub, and the seat of power of Nawabs in the 18th and 19th centuries.[10] It continues to be an important centre of governance, administration, education, commerce, aerospace, finance, pharmaceuticals, technology, design, culture, tourism, music, and poetry.[11][12][13]
+        </p>
+         <a href="https://en.wikipedia.org/wiki/lucknow" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
 
